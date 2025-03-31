@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <style>
+        /* Fondo rojo más claro para toda la página */
+        body {
+            background-color: #ff4d4d; /* Rojo más claro */
+            color: #fff; /* Texto blanco por defecto */
+        }
+
+        /* Estilo para la primera fila con solo texto */
+        .first-row {
+            background-color: #ff4d4d; /* Rojo más claro */
+            color: white;
+            padding: 80px 0;
+        }
+
+        /* Justificar el texto de la columna izquierda */
+        .descripcion {
+            text-align: justify;
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro translúcido para contraste */
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        /* Título con espacio para el emoji */
+        .titulo {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        /* Estilo para el título "Primer campeonato" en mayúsculas */
+        .primer-campeonato {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 2rem;
+            text-transform: uppercase; /* Poner el título en mayúsculas */
+        }
+
+        /* Estilo para la imagen pequeña */
+        .img-small {
+            width: 30%; /* Ajusté el tamaño de la imagen más pequeña */
+            height: auto;
+        }
+
+        /* Estilo para la fila con la imagen de fondo y descripción */
+        .third-row {
+            background-image: url('https://imagenes.eltiempo.com/files/image_1200_600/uploads/2024/04/20/66247a590544d.jpeg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0; /* Agrandado para que la imagen se vea completamente */
+            color: white;
+        }
+
+        /* Estilo para la fila con la nueva imagen */
+        .fourth-row {
+            background-image: url('https://imagenes.eltiempo.com/files/image_1200_600/uploads/2022/12/20/63a2630d56e23.jpeg');
+            background-size: cover;
+            background-position: center;
+            padding: 150px 0; /* Aumenté el padding para que la imagen se vea mejor */
+            color: white;
+        }
+
+        /* Estilo para el contexto sin fondo */
+        .contexto {
+            text-align: center;
+            font-size: 1.2rem;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        /* Fila delgada entre las dos imágenes */
+        .spacer {
+            height: 20px; /* Fila delgada */
+            background-color: #fff; /* Blanco para separarlas */
+        }
+
+        /* Estilo para las columnas de historia y estadísticas */
+        .row-columns {
+            margin-top: 40px;
+        }
+
+        .col-custom {
+            background-color: #333; /* Color de fondo para las columnas */
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        /* Estilos para las filas con 2 columnas (historia y estadísticas) */
+        .row-columns-2 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .col-md-6 {
+            flex: 0 0 48%; /* Ajuste para que las dos columnas estén una al lado de la otra */
+            margin-bottom: 20px;
+        }
+
+        /* Estilos para las filas con 2 columnas adicionales */
+        .row-columns-3 {
+            margin-top: 40px;
+        }
+
+        .col-md-6-2 {
+            flex: 0 0 48%; /* Ajuste para que las dos columnas estén una al lado de la otra */
+            margin-bottom: 20px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        /* Agregar espacio entre las columnas */
+        .row-columns-3 .col-md-6-2 {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+        /* Estilos para la imagen de Copa Sudamericana */
+        .img-copa {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Estilos para la nueva fila con 3 columnas */
+        .row-columns-4 {
+            margin-top: 40px;
+        }
+
+        .col-4-custom {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .img-femenino {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Contenedor principal -->
+    <div class="container-fluid">
+        <!-- Fila 1: Título con emoji de león -->
+        <div class="row first-row">
+            <div class="col-12 text-center">
+                <h1><span class="titulo">INDEPENDIENTE SANTA FE 🦁</span></h1>
+            </div>
+        </div>
+
+        <!-- Fila 2: Subtítulo con trofeo -->
+        <div class="row mt-3">
+            <div class="col-12 text-center">
+                <h2>¡BIENVENIDO A LA PAGINA DEL PRIMER CAMPEON! 🏆</h2>
+            </div>
+        </div>
+
+        <!-- Fila 3: Foto y descripción con imagen de fondo -->
+        <div class="row third-row">
+            
+            <!-- Columna 2: Descripción del equipo -->
+            <div class="col-6 descripcion">
+                <p>Independiente Santa Fe es uno de los clubes de fútbol más importantes de Colombia, fundado en 1941 en Bogotá. Conocido como "Los Cardenales", ha sido un equipo históricamente exitoso, con múltiples títulos de liga y competiciones internacionales, como la Copa Sudamericana 2015. Santa Fe es famoso por su pasión, su fuerte hinchada y su espíritu competitivo. A lo largo de los años, el club ha sido cuna de numerosos jugadores que han destacado tanto a nivel nacional como internacional. Santa Fe es un emblema del fútbol colombiano y uno de los equipos más tradicionales de la capital del país.</p>
+            </div>
+
+            <!-- Columna 3: Imagen del escudo del equipo -->
+            <div class="col-3 text-center">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Escudo_de_Independiente_Santa_Fe.png/250px-Escudo_de_Independiente_Santa_Fe.png" 
+                     alt="Escudo de Independiente Santa Fe" class="img-fluid img-small">
+            </div>
+        </div>
+
+        <!-- Fila de separación entre las dos imágenes -->
+        <div class="row spacer"></div>
+
+        <!-- Fila 4: Nueva imagen de fondo -->
+        <div class="row fourth-row">
+            <div class="col-12 text-center">
+                <h2>¡UN HITO EN LA HISTORIA DE SANTA FE!</h2>
+            </div>
+        </div>
+
+        <!-- Fila 5: Contexto sobre el primer campeonato sin fondo -->
+        <div class="row mt-4">
+
+            <div class="col-12 contexto">
+                <p>Independiente Santa Fe ganó su primer campeonato de liga en 1948, logrando así uno de los hitos más importantes de su historia. Este título, que marcó el inicio de una serie de victorias y éxitos para el club, consolidó a Santa Fe como uno de los equipos más importantes del fútbol colombiano. Desde entonces, el club ha sido sinónimo de pasión y entrega, convirtiéndose en un emblema del deporte en Colombia.</p>
+            </div>
+        </div>
+
+        <!-- Fila 6: Historia y Estadísticas en 2 columnas -->
+        <div class="row row-columns-3 d-flex" style="flex-wrap: nowrap;">
+            <div class="col-4 col-custom">
+                <h3>Historia del equipo</h3>
+                <p>Fundado en 1941, Independiente Santa Fe ha sido un club líder en Colombia. Con una gran historia de victorias y una fiel hinchada, el club se ha consolidado como uno de los más prestigiosos de Bogotá y del país.</p>
+            </div>
+            <div class="col-4 text-center">
+                <img src="https://ichef.bbci.co.uk/ace/ws/640/amz/worldservice/live/assets/images/2015/12/10/151210032221_copa_sudamericana_santa_fe_624x351_reuters_nocredit.jpg.webp" 
+                     alt="Copa Sudamericana" class="img-fluid img-copa">
+            </div>
+            <div class="col-4 col-custom">
+                <h3>Estadísticas de Títulos Ganados</h3>
+                <p>Santa Fe ha ganado múltiples títulos nacionales e internacionales, incluyendo 9 títulos de liga colombiana y la Copa Sudamericana 2015. Es uno de los equipos más laureados de Colombia.</p>
+            </div>
+        </div>
+
+        <!-- Nueva Fila: 3 Columnas -->
+        <div class="row row-columns-4 d-flex flex-nowrap">
+            <div class="row row-columns-4 d-flex flex-nowrap">
+                <div class="col-4 col-4-custom">
+                    <h3>EQUIPO FEMENINO CON MÁS LIGAS</h3>
+                    <p>Independiente Santa Fe Femenino ha demostrado ser un referente en el fútbol colombiano, ganando múltiples títulos nacionales desde la creación de la Liga Profesional Femenina. El equipo se ha destacado por su fuerza, perseverancia y compromiso, obteniendo la admiración de la hinchada y consolidándose como uno de los clubes más poderosos del país.</p>
+                </div>
+                <div class="col-4 text-center">
+                    <img src="https://cloudfront-us-east-1.images.arcpublishing.com/prisaradioco/YHXUMM3MOZDCDJ3EMTC6C6NUDY.jpg" 
+                         alt="Equipo Femenino Santa Fe" class="img-fluid img-femenino">
+                </div>
+                <div class="col-4 col-4-custom" style="overflow: hidden; text-overflow: ellipsis; white-space: normal; text-transform: none; word-wrap: break-word;">
+                    <p>Su casa es el estadio nemesio camacho en campín, en la ciudad de bogotá</p>
+                    <p>El estadio nemesio camacho, conocido popularmente como el campín, es uno de los estadios más emblemáticos de colombia. Inaugurado en 1938, ha sido la sede de innumerables partidos importantes, tanto a nivel nacional como internacional. Con una capacidad para más de 36,000 espectadores, es el hogar de los equipos más grandes de bogotá, como independiente santa fe y millonarios.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Fila 7: Formulario del hincha León -->
+<div class="row mt-4">
+    <div class="col-12 text-center">
+        <h2>FORMULARIO DEL HINCHA LEÓN</h2>
+    </div>
+</div>
+
+<!-- Fila 8: Formulario de contacto -->
+<div class="row mt-3">
+    <div class="col-12 col-md-6 offset-md-3">
+        <form>
+            <div class="form-group">
+                <label for="username">Nombre de Usuario</label>
+                <input type="text" class="form-control" id="username" placeholder="Ingresa tu nombre de usuario">
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+        </form>
+    </div>
+</div>
+
+        
+        
+        
+    
+</div>
+
+
+    </div>
+</body>
+
+</html>
